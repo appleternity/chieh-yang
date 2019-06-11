@@ -1,3 +1,43 @@
+body {}
+
 .center {
     text-align: center;
+}
+
+#name-brand {
+    color: white;
+}
+
+.navbar-nav a {
+    color: white;
+}
+
+#introduction {
+    /*background-image: url("stone.JPG");*/
+    background-position: center; 
+    background-size: 100%;
+    height:500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.chinese {
+    font-family: 'Noto Serif TC', serif;
+    word-spacing: 10px;
+}
+
+.description {
+}
+
+#information td:nth-child(1), #information td:nth-child(3) {
+    font-weight: 600;
+    padding-right: 15px;
+}
+
+#information td:nth-child(2) {
+    padding-right: 15px;
+}
+
+#information td {
+    line-height: 30px;
 }
