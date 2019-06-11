@@ -21,12 +21,18 @@ body {}
     margin-bottom: 20px;
 }
 
+#introduction hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .chinese {
     font-family: 'Noto Serif TC', serif;
     word-spacing: 10px;
 }
 
 .description {
+    margin-top: 50px;
 }
 
 #information td:nth-child(1), #information td:nth-child(3) {
@@ -35,9 +41,42 @@ body {}
 }
 
 #information td:nth-child(2) {
-    padding-right: 15px;
+    padding-right: 30px;
 }
 
 #information td {
-    line-height: 30px;
+    line-height: 40px;
+}
+
+.my-icon {
+    font-size: 25pt; 
+}
+
+paper::before {
+    content:'"';
+}
+
+paper::after {
+    content:'"';
+}
+
+paper {
+    font-style: italic;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #087F8C;
+}
+
+paper:hover {
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.7);
+}
+
+publisher {
+    font-weight: 900;
+    color: #5E0035;
+    cursor: pointer;
+}
+
+publisher:hover {
+    color: #A77390; 
 }
