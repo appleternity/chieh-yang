@@ -10,4 +10,12 @@ $(document).ready(function() {
         window.open($(evt.target).attr("href"), '_blank');
     });
 
+    $(document).on("click", "place", function(evt) {
+        window.open($(evt.target).attr("href"), '_blank');
+    });
+
+    $(document).on("click", "advisor", function(evt) {
+        window.open($(evt.target).attr("href"), '_blank');
+    });
+
 });
