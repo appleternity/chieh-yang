@@ -1,4 +1,6 @@
-body {}
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
 
 .center {
     text-align: center;
@@ -49,7 +51,7 @@ body {}
 }
 
 .my-icon {
-    font-size: 25pt; 
+    font-size: 30pt; 
 }
 
 paper::before {
@@ -131,4 +133,38 @@ advisor {
 
 advisor:hover {
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.7);
+}
+
+#navbarNavAltMarkup a{
+    font-weight: bold;
+}
+
+.item_name {
+    font-weight: bold;
+    padding-right: 20px;
+    line-height: 35pt;
+    vertical-align: unset;
+}
+
+#social a{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#social a:hover {
+    text-decoration: none;
+}
+
+year {
+    font-weight: bold;
+}
+
+year::before {
+    content: "Year:";
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.star_project .project_title::after {
+    content: "*";
 }

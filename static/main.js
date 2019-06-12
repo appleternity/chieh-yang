@@ -1,21 +1,18 @@
 $(document).ready(function() {
     console.log("Hello");
 
-    $(document).on("click", "paper", function(evt) {
-        window.open($(evt.target).attr("href"), '_blank');
-    });
+    var go_href = function(evt) {
+        var url = $(evt.target).attr("href");
+        if (url == "") {
+            return;
+        } else {
+            window.open(url, '_blank');
+        }
+    }
 
-    
-    $(document).on("click", "publisher", function(evt) {
-        window.open($(evt.target).attr("href"), '_blank');
-    });
-
-    $(document).on("click", "place", function(evt) {
-        window.open($(evt.target).attr("href"), '_blank');
-    });
-
-    $(document).on("click", "advisor", function(evt) {
-        window.open($(evt.target).attr("href"), '_blank');
-    });
+    $(document).on("click", "paper", go_href);
+    $(document).on("click", "publisher", go_href);
+    $(document).on("click", "place", go_href);
+    $(document).on("click", "advisor", go_href);
 
 });

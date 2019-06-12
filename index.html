@@ -7,7 +7,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC:900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC:900|Nunito+Sans&display=swap" rel="stylesheet">
     <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
     <script src="https://kit.fontawesome.com/2968ada8db.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,7 +23,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="publications.html">Publications</a>
           <a class="nav-item nav-link" href="projects.html">Projects</a>
           <a class="nav-item nav-link" href="activities.html">Activities</a>
         </div>
@@ -46,41 +47,39 @@
                 </div>
                 <hr>
                 <div>
-                    <table id="information">
-                        <tr>
-                            <td>Email</td>
-                            <td><a href="mailto:chiehyang@psu.edu" target="_blank">chiehyang@psu.edu</a></td>
-                            <td>Twitter </td>
-                            <td><a href="https://twitter.com/appleternity?lang=en" target="_blank">@appleternity <!--i class="fab fa-twitter-square my-icon"></i--></a></td>
-                        </tr>
-                        <tr>
-                            <td>Github</td>
-                            <td><a href="https://github.com/appleternity" target="_blank"><i class="fab fa-github my-icon"></i></a></td>
-                            <td>Google Scholar</td>
-                            <td><a href="https://scholar.google.com/citations?user=WSVl1oQAAAAJ&hl=en" target="_blank"><i class="fab fa-google my-icon"></i></a></td>
-                        </tr>
-                        <tr>
-                            <td>CV / Resume</td>
-                            <td><a href="CV.pdf" target="_blank"><i class="far fa-file-pdf my-icon"></i></a></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </table>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <span class="item_name">Email</span>
+                            <a href="mailto:chiehyang@psu.edu" target="_blank">chiehyang@psu.edu</a>
+                        </div>
+                        <div class="col-sm-6">
+                            <span class="item_name">CV / Resume</span>
+                            <a href="CV.pdf" target="_blank"><i class="far fa-file-pdf my-icon"></i></a>
+                        </div>
+                        <div class="col-sm-12" id="social">
+                            <span style="font-weight:bold;">You can also find me here</span>
+                            <a href="https://github.com/appleternity" target="_blank" class="fab fa-github my-icon"></a>
+                            <a href="https://twitter.com/appleternity?lang=en" target="_blank" class="fab fa-twitter-square my-icon"></a>
+                            <a href="https://scholar.google.com/citations?user=WSVl1oQAAAAJ&hl=en" target="_blank" class="fab fa-google my-icon"></a>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <hr>
-        
-        <div class="row" id="news">
-            <h3 style="font-weight: 800;">News</h3>
-            <ul>
-                <li>I will attend HCIC 2019 @San Jose, CA, USA.</li>
-                <li>I will attend ACL 2019 @Florence, Italy.</li>
-                <li>Our paper, <paper href="http://arxiv.org/abs/1906.02782">From Receptive to Productive: Learning to Use Confusing Words through Automatically Selected Example Sentences</paper>, has been accepted by <publisher href="https://sig-edu.org/bea/current">BEA 14</publisher> co-located with ACL 2019 @ Florence.</li>
-                <li>Our paper, <paper href="http://arxiv.org/abs/1906.01764">Visual Story Post-Editing</paper>, has been accepted by <publisher href="http://www.acl2019.org/EN/index.xhtml">ACL 2019</publisher>.</li>
-                <li>Our paper, <paper href="https://www.frontiersin.org/articles/10.3389/fdata.2019.00005/full">Location Prediction for Tweets</paper>, has been published in <publisher href="https://www.frontiersin.org/journals/big-data">Fontiers in Big Data</publisher>.</li>
-            </ul>
+            
+            <div id="news" class="col-md-12">
+
+            <hr>
+                <h3 style="font-weight: 800;">News</h3>
+                <ul>
+                    <li>I will attend HCIC 2019 @San Jose, CA, USA.</li>
+                    <li>I will attend ACL 2019 @Florence, Italy.</li>
+                    <li>Our paper, <paper href="http://arxiv.org/abs/1906.02782">From Receptive to Productive: Learning to Use Confusing Words through Automatically Selected Example Sentences</paper>, has been accepted by <publisher href="https://sig-edu.org/bea/current">BEA 14</publisher> co-located with ACL 2019 @ Florence.</li>
+                    <li>Our paper, <paper href="http://arxiv.org/abs/1906.01764">Visual Story Post-Editing</paper>, has been accepted by <publisher href="http://www.acl2019.org/EN/index.xhtml">ACL 2019</publisher>.</li>
+                    <li>Our paper, <paper href="https://www.frontiersin.org/articles/10.3389/fdata.2019.00005/full">Location Prediction for Tweets</paper>, has been published in <publisher href="https://www.frontiersin.org/journals/big-data">Fontiers in Big Data</publisher>.</li>
+                </ul>
+            </div>
+
         </div>
 
     </div>

@@ -7,7 +7,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC:900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC:900|Nunito+Sans&display=swap" rel="stylesheet">
     <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
     <script src="https://kit.fontawesome.com/2968ada8db.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -24,6 +24,7 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-item nav-link" href="index.html">Home</a>
+          <a class="nav-item nav-link" href="publications.html">Publications</a>
           <a class="nav-item nav-link active" href="projects.html">Projects<span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="activities.html">Activities</a>
         </div>
@@ -31,9 +32,10 @@
     </nav>
 
     <div class="container">
-        <h1 style="font-weight: bold;">Projects</h1>
+        <h1 class="center" style="font-weight: bold;">Projects</h1>
+        <p class="center">Projects I have been working on.</p>
 
-        <div class="project">
+        <div class="project star_project">
             <div class="project_title">Crowd Writing</div>
             <div class="project_subtitle">Helping Creative Writing</div>
             <div class="row">
@@ -45,6 +47,7 @@
                 <div class="col-md-8">
                     <place href="https://crowd.ist.psu.edu/crowd-ai-lab.html">Crowd-AI Lab, Penn State University</place>
                     <advisor href="https://crowd.ist.psu.edu/">Dr. Kenneth Huang</advisor>
+                    <year>2019</year>
                     <p class="project_intro">
                     Writing is a complicated task that needs a complex skills. Supporting writing, therefore, is a
                     difficult task for AI since AI is not capable of understanding. In this project, we try to provide
@@ -55,52 +58,96 @@
         </div>
 
         <div class="project">
-            <div class="project_title">GiveMeExample</div>
-            <div class="project_subtitle">Learning Synonyms by Example Sentences</div>
-            <div class="row">
-                <div class="col-md-4">
-                   <figure class="figure">
-                        <img src="static/GiveMeExample.png" class="figure-img img-fluid rounded" alt="Photo of GiveMeExample">
-                    </figure>
-                </div>
-                <div class="col-md-8">
-                    <place href="http://academiasinicanlplab.github.io/">NLPSA Lab, Academia Sinica</place>
-                    <advisor href="https://www.iis.sinica.edu.tw/pages/lwku/contact_en.html">Dr. Lun-Wei Ku</advisor>
-                    <p class="project_intro">
-                    GiveMeExample aims to suggest critical example sentences for language learner to clarify the
-                    confusion of synonym. Three main components, the sentence difficulty assessment built by
-                    a regression model, the word-sentence fitness estimator built by GMM and BiLSTM, and the
-                    heuristic clarification scoring function are introduced to solve this problem. Several websites
-                    are built for collecting data and holding evaluation tests.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!--div class="project">
             <div class="project_title">Geographic Information Prediction on Twitter</div>
-            <div class="project_subtitle">Learning Synonyms by Example Sentences</div>
+            <div class="project_subtitle">Location Prediction on Pure Text</div>
             <div class="row">
                 <div class="col-md-4">
                    <figure class="figure">
-                        <img src="static/GiveMeExample.png" class="figure-img img-fluid rounded" alt="Photo of GiveMeExample">
+                        <img src="static/fdata-02-00005-g004.jpg" class="figure-img img-fluid rounded" alt="Photo of Geographic Information">
                     </figure>
                 </div>
                 <div class="col-md-8">
-                    <place href="http://academiasinicanlplab.github.io/">NLPSA Lab, Academia Sinica</place>
-                    <advisor href="https://www.iis.sinica.edu.tw/pages/lwku/contact_en.html">Dr. Lun-Wei Ku</advisor>
+                    <place href="">Data Lab, Arizona State University</place>
+                    <advisor href="http://tonghanghang.org/">Dr. Hanghang Tong</advisor>
+                    <year>2018</year>
                     <p class="project_intro">
-                    GiveMeExample aims to suggest critical example sentences for language learner to clarify the
-                    confusion of synonym. Three main components, the sentence difficulty assessment built by
-                    a regression model, the word-sentence fitness estimator built by GMM and BiLSTM, and the
-                    heuristic clarification scoring function are introduced to solve this problem. Several websites
-                    are built for collecting data and holding evaluation tests.
+                    Geographic Information plays an important role on both marketing and event mining, but is
+                    usually blocked due to the privacy issues. This project introduces a deep learning architecture
+                    taking the attention mechanism, the subword feature, and the location hierarchy structure into
+                    account to predict the geographic information for a given post on Twitter.
                     </p>
                 </div>
             </div>
         </div>
 
         <div class="project">
+            <div class="project_title">Response Time Prediction</div>
+            <div class="project_subtitle">EmotionPush Dataset and its application</div>
+            <div class="row">
+                <div class="col-md-4">
+                   <figure class="figure">
+                        <img src="static/ResponseTimePrediction.png" class="figure-img img-fluid rounded" alt="Photo of Response Time Prediction">
+                    </figure>
+                </div>
+                <div class="col-md-8">
+                    <place href="http://academiasinicanlplab.github.io/">NLPSA Lab, Academia Sinica</place>
+                    <advisor href="https://www.iis.sinica.edu.tw/pages/lwku/contact_en.html">Dr. Lun-Wei Ku</advisor>
+                    <year>2018</year>
+                    <p class="project_intro">
+                    This project aims to predict the response time of a given message sending on the instance message system. 
+                    This task could be viewed as a measurement of the dialog generation system. A
+                    deep learning model integrating conversation and some user-specific information is proposed.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project_title">MoodSwipe</div>
+            <div class="project_subtitle">A Keyboard for Sentence Suggestion According to Emotions.</div>
+            <div class="row">
+                <div class="col-md-4">
+                   <figure class="figure">
+                        <img src="static/MoodSwipe.png" class="figure-img img-fluid rounded" alt="Photo of MoodSwipe">
+                    </figure>
+                </div>
+                <div class="col-md-8">
+                    <place href="http://academiasinicanlplab.github.io/">NLPSA Lab, Academia Sinica</place>
+                    <advisor href="https://www.iis.sinica.edu.tw/pages/lwku/contact_en.html">Dr. Lun-Wei Ku</advisor>
+                    <year>2017</year>
+                    <p class="project_intro">
+                    MoodSwipe is a mobile phone keyboard that suggests text messages according to the user-specified 
+                    emotion. We aim to create a convenient user interface to enjoy the technology of emotion 
+                    classification and text suggestion, and at the same time to collect labeled data automatically.
+                    Two emotion classifier models, CNN and LSTM, and two sentence suggestion models, BM25
+                    and similarity of sentence embedding, are built for MoodSwipe.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project_title">EmotionPush</div>
+            <div class="project_subtitle">Color-Based Emotion Cues for Messaging Applications</div>
+            <div class="row">
+                <div class="col-md-4">
+                   <figure class="figure">
+                        <img src="static/EmotionPush.png" class="figure-img img-fluid rounded" alt="Photo of EmotionPush">
+                    </figure>
+                </div>
+                <div class="col-md-8">
+                    <place href="http://academiasinicanlplab.github.io/">NLPSA Lab, Academia Sinica</place>
+                    <advisor href="https://www.iis.sinica.edu.tw/pages/lwku/contact_en.html">Dr. Lun-Wei Ku</advisor>
+                    <year>2017</year>
+                    <p class="project_intro">
+                    EmotionPush provides a machine-learning-powered system that automatically conveys users’
+                    emotions in messages by color-based emotion cues to bridge the limitation of text-based chatting system in expressing rich emotion.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project star_project">
             <div class="project_title">GiveMeExample</div>
             <div class="project_subtitle">Learning Synonyms by Example Sentences</div>
             <div class="row">
@@ -112,6 +159,7 @@
                 <div class="col-md-8">
                     <place href="http://academiasinicanlplab.github.io/">NLPSA Lab, Academia Sinica</place>
                     <advisor href="https://www.iis.sinica.edu.tw/pages/lwku/contact_en.html">Dr. Lun-Wei Ku</advisor>
+                    <year>2016 - 2017</year>
                     <p class="project_intro">
                     GiveMeExample aims to suggest critical example sentences for language learner to clarify the
                     confusion of synonym. Three main components, the sentence difficulty assessment built by
@@ -121,7 +169,7 @@
                     </p>
                 </div>
             </div>
-        </div-->
-
+        </div>
     </div>
 </body>
+
