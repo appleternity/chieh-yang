@@ -168,3 +168,68 @@ year::before {
 .star_project .project_title::after {
     content: "*";
 }
+
+#footer {
+    margin-top: 30px;
+    padding-top: 0px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+#news table td:nth-child(1)::before {
+    content: "•";
+}
+
+#publication_list li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+papertitle {
+    display: block;
+    font-weight: bold;
+}
+
+authorlist {
+    display: block;
+}
+
+me {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+conference {
+    font-style: italic;
+    font-size: 13pt;
+    display:block;
+}
+
+conferenceAbb::before {
+    content: "(";
+}
+conferenceAbb {
+    font-weight: bold;
+    font-size: 13pt;
+    display: inline-block;
+}
+conferenceAbb::after {
+    content: ")";
+}
+arXiv, pdf {
+    color: #118AB2;
+    cursor: pointer;
+}
+arXiv:hover, pdf:hover {
+    font-weight: bold;
+}
+
+arXiv::before {
+    content: "[arXiv]";
+}
+
+pdf::before {
+    content:"[paper]"
+}
+

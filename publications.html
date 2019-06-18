@@ -15,25 +15,115 @@
     <script src="static/main.js"></script>
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Chieh-Yang</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="index.html">Home</a>
-          <a class="nav-item nav-link active" href="publications.html">Publications<span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="projects.html">Projects</a>
-          <a class="nav-item nav-link" href="activities.html">Activities</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Chieh-Yang</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.html">Home</a>
+                    <a class="nav-item nav-link active" href="publications.html">Publications<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="projects.html">Projects</a>
+                    <a class="nav-item nav-link" href="activities.html">Activities</a>
+                </div>
+            </div>
         </div>
-      </div>
     </nav>
 
     <div class="container">
         <h1 class="center" style="font-weight: bold;">Publication</h1>
-        <p class="center">Here is the publication list I have published.</p>
+        <p class="center">Here is the papers I have published.</p>
+
+        <ol reversed id="publication_list">
+            <li>
+                <papertitle>From Receptive to Productive: Learning to Use Confusing Words through Automatically Selected Example Sentences</papertitle>
+                <authorlist><me>Chieh-Yang Huang</me>, Yi-Ting Huang, Mei-Hua Chen, and Lun-Wei Ku</authorlist>
+                <conference>
+                    The 14th Workshop on Innovative Use of NLP for Building Educational Applications
+                    <conferenceAbb>BEA 2019</conferenceAbb>
+                </conference>
+                <arXiv href="https://arxiv.org/abs/1906.02782"></arXiv>
+            </li>
+            <li>
+                <papertitle>Visual Story Post-Editing</papertitle>
+                <authorlist>Ting-Yao Hsu, <me>Chieh-Yang Huang</me>, Yen-Chia Hsu, and Ting-Hao Kenneth Huang</authorlist>
+                <conference>
+                    The 57th Annual Meeting of the Association for Computational Linguistics.
+                    <conferenceAbb>ACL 2019</conferenceAbb>
+                </conference>
+                <arXiv href="https://arxiv.org/abs/1906.01764"></arXiv>
+            </li>
+            <li>
+                <papertitle>Location Prediction for Tweets</papertitle>
+                <authorlist><me>Chieh-Yang Huang</me>, Hanghang Tong, Jingrui He, and Ross Maciejewski</authorlist>
+                <conference>Frontiers in Big Data</conference>
+                <pdf href="https://www.frontiersin.org/articles/10.3389/fdata.2019.00005/full"></pdf>
+            </li>
+            <li>
+                <papertitle>EmotionPush: Emotion and Response Time Prediction Towards Human-Like Chatbots</papertitle>
+                <authorlist><me>Chieh-Yang Huang</me> and Lun-Wei Ku</authorlist>
+                <conference>
+                    2018 IEEE GLobal Communications Conference
+                    <conferenceAbb>GLOBECOM 2018</conferenceAbb>
+                </conference>
+                <pdf href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8647331"></pdf>
+            </li>
+            <li>
+                <papertitle>MoodSwipe: A Soft Keyboard that Suggests Messages Based on User-Specified Emotions</papertitle>
+                <authorlist><me>Chieh-Yang Huang</me>, Tristan Labetoulle, Ting-Hao Kenneth Huang, Yi-Pei Chen, Hung-Chen Chen, Vallari Srivastava, Lun-Wei Ku</authorlist>
+                <conference>
+                    Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing: System Demonstrations.
+                    <conferenceAbb>EMNLP 2017</conferenceAbb>
+                </conference>
+                <pdf href="https://www.aclweb.org/anthology/D17-2013"></pdf>
+            </li>
+            <li>
+                <papertitle>Towards a Better Learning of Near-Synonyms: Automatically Suggesting Example Sentences via Fill in the Blank</papertitle>
+                <authorlist><me>Chieh-Yang Huang</me>, Mei-Hua Chen, and Lun-Wei Ku</authorlist>
+                <conference>
+                    Proceedings of the 26th International Conference on World Wide Web Companion.
+                    <conferenceAbb>WWW 2017</conferenceAbb>
+                </conference>
+                <pdf href="https://dl.acm.org/citation.cfm?id=3054163"></pdf>
+            </li>
+            <li>
+                <papertitle>Challenges in Providing Automatic Affective Feedback in Instant Messaging Applications</papertitle>
+                <authorlist><me>Chieh-Yang Huang</me>, Ting-Hao Kenneth Huang, and Lun-Wei Ku</authorlist>
+                <conference>
+                    2017 AAAI Spring Symposium Series.
+                    <conferenceAbb>2017 AAAI SSS</conferenceAbb>
+                </conference>
+                <arXiv href="https://arxiv.org/abs/1702.02736"></arXiv>
+                <pdf href="https://www.aaai.org/ocs/index.php/SSS/SSS17/paper/download/15349/14571"></pdf>
+            </li>
+            <li>
+                <papertitle>Automatically Suggesting Example Sentences of Near-Synonyms for Language Learners.</papertitle>
+                <authorlist><me>Chieh-Yang Huang</me> and Lun-Wei Ku</authorlist>
+                <conference>
+                    Proceedings of COLING 2016, the 26th International Conference on Computational Linguistics: System Demonstrations.
+                    <conferenceAbb>COLING 2016</conferenceAbb>
+                </conference>
+                <pdf href="https://www.aclweb.org/anthology/C16-2063"></pdf>
+            </li>
+            <li>
+                <papertitle>GiveMeExample: Learning confusing words by example sentences</papertitle>
+                <authorlist><me>Chieh-Yang Huang</me> and Lun-Wei Ku</authorlist>
+                <conference>
+                    Proceedings of the 2016 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining: System Demostrations.
+                    <conferenceAbb>ASONAM 2016</conferenceAbb>
+                </conference>
+                <pdf href="https://ieeexplore.ieee.org/document/7752433"></pdf>
+            </li>
+        </ol>
+            
+        <div id="footer" class="col-md-12">
+            <hr>
+            Chieh-Yang Huang updated at June 18th. All right reserved.
+        </div>
+
     </div>
 
 </body>
