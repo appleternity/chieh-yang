@@ -16,5 +16,7 @@ $(document).ready(function() {
     $(document).on("click", "advisor", go_href);
     $(document).on("click", "arXiv", go_href);
     $(document).on("click", "pdf", go_href);
+    $(document).on("click", "slides", go_href);
+    $(document).on("click", "poster", go_href);
 
 });
