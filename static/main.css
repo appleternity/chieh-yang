@@ -217,7 +217,7 @@ conferenceAbb {
 conferenceAbb::after {
     content: ")";
 }
-arXiv, pdf, poster, slides, github {
+arXiv, pdf, poster, slides, github, media {
     color: #118AB2;
     cursor: pointer;
 }
@@ -245,4 +245,7 @@ github::before {
     content:"[Github]";
 }
 
+media::before {
+    content:"[Media]";
+}
 
