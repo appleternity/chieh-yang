@@ -34,7 +34,8 @@ body {
 }
 
 .description {
-    margin-top: 50px;
+    margin-top: 30px;
+    text-align: justify;
 }
 
 #information td:nth-child(1), #information td:nth-child(3) {
