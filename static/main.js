@@ -20,5 +20,6 @@ $(document).ready(function() {
     $(document).on("click", "poster", go_href);
     $(document).on("click", "github", go_href);
     $(document).on("click", "media", go_href);
+    $(document).on("click", "presentation", go_href);
 
 });
