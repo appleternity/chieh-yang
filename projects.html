@@ -47,27 +47,84 @@
         <h1 class="center" style="font-weight: bold;">Projects</h1>
         <p class="center">Projects I have been working on.</p>
 
-        <!--div class="project star_project">
-            <div class="project_title">Story Forecasting</div>
-            <div class="project_subtitle">Predicting What Would Happen in the Follow-up Story</div>
+        <div class="project star_project">
+            <div class="project_title">Scientific Figure Captioning</div>
+            <div class="project_subtitle">Generating Figure Captions for Scientific Documents with Automated Text Summarization</div>
             <div class="row">
                 <div class="col-md-4">
                    <figure class="figure">
-                        <img src="static/crowdwriting.png" class="figure-img img-fluid rounded" alt="Photo of CrowdWriting">
+                        <img src="static/scicap-sum-overview-figure.png" class="figure-img img-fluid rounded" alt="Photo of CrowdWriting">
                     </figure>
                 </div>
                 <div class="col-md-8">
                     <place href="https://crowd.ist.psu.edu/crowd-ai-lab.html">Crowd-AI Lab, Penn State University</place>
                     <advisor href="https://crowd.ist.psu.edu/">Dr. Kenneth Huang</advisor>
-                    <year>2019</year>
+                    <year>2022</year>
                     <p class="project_intro">
-                        Writing is a complicated task that needs a complex skills. Supporting writing, therefore, is a
-                        difficult task for AI since AI is not capable of understanding. In this project, we try to provide
-                        various helps for writer by using the power of crowd.
+                        Our project formulates scientific figure captioning as a summarization task, 
+                        where paragraphs mentioning the figures are summarized to produce 
+                        informative captions. Through fine-tuning the Pegasus model, 
+                        we have achieved significant performance improvements compared to vision-to-language models. 
+                        Furthermore, token alignment experiments have revealed that 
+                        roughly 75% of the captions can be found in the figure-mentioning paragraphs, 
+                        confirming the effectiveness of our summarization approach.
                     </p>
                 </div>
             </div>
-        </div-->
+        </div>
+
+        <div class="project star_project">
+            <div class="project_title">Story Plot Prediction</div>
+            <div class="project_subtitle">Conveying the Predicted Future to Users via Story Plot Prediction</div>
+            <div class="row">
+                <div class="col-md-4">
+                   <figure class="figure">
+                        <img src="static/story-plot-prediction.png" class="figure-img img-fluid rounded" alt="Photo of CrowdWriting">
+                    </figure>
+                </div>
+                <div class="col-md-8">
+                    <place href="https://crowd.ist.psu.edu/crowd-ai-lab.html">Crowd-AI Lab, Penn State University</place>
+                    <advisor href="https://crowd.ist.psu.edu/">Dr. Kenneth Huang</advisor>
+                    <year>2022</year>
+                    <p class="project_intro">
+                        We have developed a system, Semantic Frame Enhanced GPT-2, 
+                        which generates short descriptions to support novel writing 
+                        by providing potential future story plots. 
+                        To evaluate the system's performance, we conducted human evaluations 
+                        that assessed the quality of the generated story plots 
+                        and how they were used in a writing task.
+                        Despite GPT-3's impressive performance, the proposed model could also
+                        make a positive impact on the writing process.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project_title">Semantic Frame Prediction</div>
+            <div class="project_subtitle">Predicting What Would Happen in the Follow-up Story</div>
+            <div class="row">
+                <div class="col-md-4">
+                   <figure class="figure">
+                        <img src="static/sm-interface-all-big.png" class="figure-img img-fluid rounded" alt="Photo of CrowdWriting">
+                    </figure>
+                </div>
+                <div class="col-md-8">
+                    <place href="https://www.microsoft.com/en-us/research/project/semantic-machines/">Semantic Machines, Microsoft Research</place>
+                    <advisor>Charles Chen, Dr. Jacob Andreas, and Dr. Ben Van Durme.</advisor>
+                    <year>2021</year>
+                    <p class="project_intro">
+                        Our paper proposes an AI-powered human-in-the-loop process to collect 
+                        conversational semantic parsing data efficiently, even with limited data. 
+                        Our proposed method, guided k-best selection, generates possible candidates, 
+                        allows users to filter incorrect parses, and asks them to select the correct 
+                        parse with minimal modifications. 
+                        We conducted a user study with five annotators and found that 
+                        combining keyword searching and suggestion enabled fast and accurate annotation.
+                    </p>
+                </div>
+            </div>
+        </div>
 
         <div class="project star_project">
             <div class="project_title">Semantic Frame Prediction</div>
@@ -252,7 +309,7 @@
         
         <div id="footer" class="col-md-12">
             <hr>
-            Chieh-Yang Huang updated at Oct 9th, 2021. All right reserved.
+            Chieh-Yang Huang updated in March, 2023. All right reserved.
         </div>
     </div>
 </body>
